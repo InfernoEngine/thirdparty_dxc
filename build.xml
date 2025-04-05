@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Module>
+	
+	<GlobalSolutionName>ThirdParty</GlobalSolutionName>
+	<GlobalNamespace>potato</GlobalNamespace>
+
+	<StaticLibrary>
+		<Name>thirdparty_dxc</Name>
+		<SourceRoot>.</SourceRoot>
+		<ThirdParty>true</ThirdParty>
+		<ExportedIncludeDirectory>windows\include</ExportedIncludeDirectory>
+
+		<FilterPlatform include="windows">
+			<Frozen>true</Frozen>
+			<FrozenDeployFiles>
+				windows\bin\dxcompiler.dll
+			</FrozenDeployFiles>
+			<FrozenLibraryFiles>
+				windows\lib\dxcompiler.lib
+			</FrozenLibraryFiles>
+		</FilterPlatform>
+
+	</StaticLibrary>
+
+</Module>
